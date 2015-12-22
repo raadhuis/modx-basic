@@ -1,0 +1,71 @@
+phpmyadmin
+info.php
+.empty
+node_modules/*
+npm-debug.log
+
+# ignore all IIS files
+web.config
+
+# ignore all config.inc.php
+config.inc.php
+
+# ignore concatenated js
+modext.js
+
+# ignore various IDE project files and folders
+.idea/
+.buildpath
+.project
+.settings/
+nbproject/
+
+# ignore php and txt files beginning with test in root directory
+/test*.php
+/test*.txt
+/test/*
+
+# ignore mac files
+.DS_Store
+
+# ignore setup config files
+setup/config.xml
+setup/config.new.xml
+setup/config.upgrade.xml
+setup/config.upgrade-advanced.xml
+
+# ignore some MODX files
+/setup
+core/cache/
+core/packages/*/
+
+#ignore qsync file from QNAP
+.qicon
+
+#ignore composer files
+composer.json
+composer.lock
+
+!.gitkeep
+!node_modules/build-tools
+
+#windows hotfix
+Gitify
+/src
+/vendor
+
+#ignore files after installing MODX
+ht.access
+manager/assets/ext3/adapter/jquery/ext-jquery-adapter-debug.js
+manager/assets/ext3/adapter/prototype/ext-prototype-adapter-debug.js
+manager/assets/ext3/adapter/yui/ext-yui-adapter-debug.js
+manager/templates/default/.gitignore
+
+# ignore Gitify backup
+/_backup/*
+
+# ignore piwik
+/piwik
+
+error_log
+
