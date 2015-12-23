@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="Articles" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM">
+    <object class="ArticlesContainer" extends="modResource">
+        <composite alias="Articles" class="Article" local="id" foreign="parent" cardinality="many" owner="local" />
+    </object>
+    <object class="Article" extends="modResource">
+        <aggregate alias="Container" class="ArticlesContainer" local="parent" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+</model>

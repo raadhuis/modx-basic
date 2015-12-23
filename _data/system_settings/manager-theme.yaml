@@ -1,0 +1,4 @@
+key: manager_theme
+value: wendy
+xtype: modx-combo-manager-theme
+area: manager

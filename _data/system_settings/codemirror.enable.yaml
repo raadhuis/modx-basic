@@ -1,0 +1,5 @@
+key: codemirror.enable
+value: '1'
+xtype: combo-boolean
+namespace: codemirror
+area: Editor

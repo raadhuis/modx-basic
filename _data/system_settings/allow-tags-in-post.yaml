@@ -1,0 +1,4 @@
+key: allow_tags_in_post
+value: '0'
+xtype: combo-boolean
+area: system

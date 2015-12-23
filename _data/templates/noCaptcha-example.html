@@ -1,0 +1,41 @@
+id: 3
+templatename: 'noCaptcha example'
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<html>
+<head>
+
+[[$titletag]]
+
+[[$metatags]]
+
+[[$header_script]]
+
+[[$stylesheet]]
+
+[[$googleanalytics]]
+
+</head>
+<body>
+
+
+[[$submenu]]
+
+[[*content]]
+
+[[!FormIt? &preHooks=`preNoCaptcha` &hooks=`noCaptcha,redirect` &redirectTo=`1` &ncTheme=`light` &ncType=`image`]]
+
+  <form action="[[~[[*id]]]]" method="post">
+	<input type="text" name="naam" value="" placeholder="naam" /><br/>
+	[[+nocaptcha]]
+	<input type="submit" name="captcha" value="Submit">
+  </form>
+
+[[$footer]]
+
+[[$footer_script]]
+</body>
+</html>

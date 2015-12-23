@@ -1,0 +1,193 @@
+Changelog for Articles.
+
+Articles 1.6.5
+===============================
+- Add in includeContent param to getResources call in post listing if introtext is empty
+- Fix wrong signature after getResources update to 1.6.0-pl
+- Add Italian translation
+- Use MODX.loadPage instead of direct location changes
+- [#8344] Fixed Template combos only show ID and not name with many templates
+
+Articles 1.6.4
+===============================
+- Update getResources to 1.6.0-pl
+- [#9508] System Settings added for controlling date and time format for list view in manager.
+- Add Comment Sort Direction option
+
+Articles 1.6.3
+===============================
+- Enable tag filtering in RSS
+- Update Quip to 2.3.2-pl
+- Update Archivist to 1.2.4-pl
+- [#8443] Add Other properties setting for Latest Posts widget
+
+Articles 1.6.2
+===============================
+- Fix RSS item URLs for sites with non-root site URLs
+- Fix issues with package management for subpackages when zips are not found
+- [#8194] Add ability to change createdby for Articles for users with publish ability
+- Update German/Dutch translations
+- Update getPage to 1.2.3-pl
+- Update getResources to 1.5.0-pl
+- Future-proofing for MODX 2.3
+
+Articles 1.6.1
+===============================
+- Update Quip to 2.3.1-pl
+- Update Archivist to 1.2.3-pl
+
+Articles 1.6.0
+===============================
+- [#6373] Add ability to control the structure of the URLs generated for articles
+- [#7560] Fix issue with Quip during installs
+- [#7544] Fix issues with friendly_urls setting
+
+Articles 1.5.1
+===============================
+- Update Quip to 2.3.0-pl
+- Update tagLister to 1.1.7-pl
+- [#7559] Display ID of Article in articles grid
+- [#7550] Fix JS issue with Create New Article button
+
+Articles 1.5.0
+===============================
+- [#7313] Ensure that the archive URI is always set prior to notifications during a publishing event
+- [#7419] Add ability to duplicate single Articles
+- [#7517] Add ability to duplicate Articles Container
+- Deprecate custom DB fields to use new properties field on modResource
+
+Articles 1.4.7
+===============================
+- [#7069] Add articles.article_show_longtitle setting for toggling on/off the longtitle field when editing Articles
+- [#7057] Fix issue with RTEs and updating an Article
+
+Articles 1.4.6
+===============================
+- Fix issue with Articles snippet and $this reference
+
+Articles 1.4.5
+===============================
+- [#6832],[#6697],[#6596] Remove 255 char limit from Article summary field, remove 100 char tags field limit
+
+Articles 1.4.4
+===============================
+- [#6641] Add option to turn off richtext editing for Articles in a Container
+- [#6897] Add offset as option to latest posts display
+- [#6639] Add option to change default sorting for Articles in mgr container grid
+- [#7001] Fix issue where disabling comments prevented other placeholders from displaying
+- [#6980] Fix issue with fallback Twitter feed tpl
+- [#6850] Enable multiple Articles snippet calls per page
+- [#6625] Add in longtitle for Container in General Settings
+- Fix issue where changing template settings did not activate save btn
+- Add German, Russian, Czech translations
+- [#6626] Improve pub-date checking on WordPress import
+- [#6601] Fix template variables tab showing when creating a new article
+- [#6966] Fix issue with non-web contexts
+- Update Quip to 2.2.0-pl
+
+Articles 1.4.3
+===============================
+- [#6553] Fix issue with build where snippets were set as chunks
+- Update tagLister to 1.1.5
+
+Articles 1.4.2
+===============================
+- Add Articles snippet for easy displaying of articles anywhere on site
+- [#6534] Add confirmation for delete article in grid
+- [#6535] Fix issue with incorrect include reference for update services
+- [#6535] Fix issue with url generation for twitter posting on first save
+- [#6542] Fix right-click edit article from grid issue
+
+Articles 1.4.1
+===============================
+- Add in container calls to each Article to allow sidebars
+- [#6471] Fix issue with MODX import when no TV value is set yet TV is set to import
+- [#6490] Fix missing <ul> in container template
+
+Articles 1.4.0
+===============================
+- Add limiter for number of hashtags that are tweeted
+- [#6457] Allow option of posting Article title/url/tags to Twitter on publish
+- [#6430] Fix RSS sample template
+
+Articles 1.3.0
+===============================
+- Add "Other Parameters" for listing snippet, which allows you to pass other properties to the getPage/getResources call
+- Add option to Require Authentication for commenting
+- Upgrade Archivist to 1.2.2-pl
+
+Articles 1.2.1
+===============================
+- [#6400] Fix issue where alias was not changed in articles when container's alias was changed
+
+Articles 1.2.0
+===============================
+- [#6385] Fix issue with Resource Groups tab not showing for individual Articles
+- [#6374] Fix issue where tags were not showing in RSS
+- [#6376] Fix date formatting for RSS pub date
+- [#6375] Properly send RSS headers (requires Revo 2.2-pl or later)
+
+Articles 1.1.5
+===============================
+- [#6345] Fix and improve article view in front-end for default template
+- [#6342] Fix issue where container content was not persistent
+- [#6346] Add missing IDs to various panels in Articles UI to allow for Form Customization targeting
+
+Articles 1.1.2/3/4
+===============================
+- Better handling of comment import and MODX tags in WordPress import
+- More WordPress import fixes with character encodings
+- [#6339] Fix import from WordPress because WordPress does not escape brackets properly from export WXR file
+
+Articles 1.1.1
+===============================
+- [#6305] Rearrange TV processing advanced settings to address possible clarity issue
+- [#6303] Fix issue where some settings do not set dirty status for container form when changed
+- [#6324] Fix issue where import from MODX sets isfolder incorrectly
+- Ensure MODX import changes Resources to new ArticlesContainer template
+- Add &includeTVsList and &processTVsList advanced settings for listings
+- Upgrade getResources to 1.4.2 and getPage to 1.2.2
+
+Articles 1.1.0
+===============================
+- Add import from MODX
+- Add import from Blogger
+- Add ability to specify file on server when importing from WordPress
+- [#6296] Add sortBy and sortDir settings for getResources to the Advanced Settings tab for containers
+- [#6299] Ensure that if author of Article is deleted, article can still be viewed/edited
+
+Articles 1.0.2
+===============================
+- Add ability to filter by author on articles
+- Vastly improve loading speeds and caching for main articles page
+- Add more options for getPage to container settings
+
+Articles 1.0.1
+===============================
+- Add ability to toggle including and processing of TVs on archive listing pages
+- Include new Archivist parameters, &groupByYear and &groupByYearTpl
+- [#6252] Fix paging on articles main list page
+
+Articles 1.0.0
+===============================
+- [#6201] Add ability to import posts+comments from WordPress
+- [#6167] Fix issue where unpublished new articles were not showing in grid
+- Allow search on articles grid to search tags
+- Add content preview for each article to articles grid
+- Add bulk publish/unpublish/delete/undelete to articles grid
+- [#6202] Add back menuindex into Articles Container settings
+- [#6205] Fix array error in article update controller
+- [#6168] Prevent creation of Resources below Articles resources
+- Fix issue where article tpl was incorrect in container settings
+- [#6164] Prevent changing Resource to Articles when using class_key dropdown
+- [#6158] Add ability to "undelete" deleted articles
+- [#6161] Fix issue with changing article row chunk
+- [#6160] Remove template change reloading for Article types
+- Custom UI for article posting
+- Container-specific settings
+- Integrated RSS feeds with customizable URLs
+- Integrated Quip commenting
+- Automatic archiving of Articles
+- Integrated tagging
+- Easy templating for containers and articles
+- Initial release.

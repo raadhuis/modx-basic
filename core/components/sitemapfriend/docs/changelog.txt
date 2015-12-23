@@ -1,0 +1,44 @@
+Changelog for sitemapFriend.
+
+sitemapFriend 1.0.2-pl (2013-04-20)
+===============================================================================
+- Fix: issue #4: removed <dc:title> from xml sitemaps as it doesn't pass
+                 Google Sitemap validation.
+
+
+sitemapFriend 1.0.1-pl (2013-01-18)
+===============================================================================
+- Addition: issue #2: new parameter includeWebLinks (bool) - default is false.
+- Doc: add missing '?' in example calls from readme file.
+
+
+sitemapFriend 1.0.0-rc1 (2012-11-08)
+===============================================================================
+- Fix: issue #1: titleField vs fieldTitle.
+                 The right syntax is titleField
+- Note: issues are reported at https://github.com/yogoo/sitemapFriend
+        Their number start from 1 again
+
+
+sitemapFriend 1.0.0-beta3 (2012-04-02)
+===============================================================================
+- Addition: issue #5: new parameter titleField
+                      Can be set to `pagetitle`, `longtitle`, `menutitle`
+- Addition: French translation.
+- Fix: issue #8, #11: encode ampersand character in xml urls.
+- Fix: prevent lexicon collision.
+- Fix: typos in php doc.
+- Misc.: moved default chunks to file.
+- Misc.: revamped build script.
+
+
+sitemapFriend 1.0-beta2 (2010-11-20)
+===============================================================================
+- Fix: issue #1: localization issues.
+- Fix: issue #2: function to exclude all children from a parent.
+- Fix: issue #3: skip external links (modWebLink).
+
+
+sitemapFriend 1.0-beta (2010-11-16)
+===============================================================================
+- Initial release.

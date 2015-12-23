@@ -1,0 +1,24 @@
+id: 6
+source: 1
+name: footer_script
+description: ''
+category: Algemeen
+properties: 'a:0:{}'
+
+-----
+
+<script>
+
+	$(document).ready(function() {
+
+		// Facebook
+		$.post('https://graph.facebook.com', {
+	        id: '[[~[[*id]]? &scheme=`full`]]',
+    	    scrape: true
+    	},
+	    function(response){
+    	    //console.log(response);
+	    });
+
+	});
+</script>

@@ -1,0 +1,58 @@
+Changelog for Archivist.
+
+Archivist 1.2.4
+===============
+- [#6969] Fix bug with dateFormat and archives filtering
+- Add sanity check for get params merge rarely causing PHP notice error (gh#16)
+- Remove deprecated code sometimes causing PHP notice error (gh#15)
+
+Archivist 1.2.3
+===============
+- [#4650] Add &exclude parameter for excluding various Resources from results in Archivist snippet
+- [#7412] Fix error with month name on windows machines
+- Fix various E_NOTICE errors
+
+Archivist 1.2.2
+===============
+- Properly inherit getResources in getArchives snippet
+
+Archivist 1.2.1
+===============
+- Add author handling
+- Fix issues with getPage, caching and various other sorting issues
+
+Archivist 1.2.0
+===============
+- Add &groupByYear and &groupByYearTpl to allow for grouping results by year in Archivist, into nested lists
+- [#4200] Up Archivist and ArchivistGrouper default limit to 12 to represent months of year
+- [#4250] Fix typo in properties list options for sorting properties
+- [#5241] Fix issue with locales and month name
+- [#5015] Default showHidden for getArchives to 1
+
+Archivist 1.1.2
+===============
+- Fix issues with &where in getArchives
+
+Archivist 1.1.0
+===============
+- Better tagging support
+- Add limitItems property to ArchivistGrouper to allow for limiting of # of items that show in each group
+- Add ArchivistGrouper snippet for displaying Resources grouped by month or year
+
+Archivist 1.0.2
+===============
+- [#10] Added &locale to allow users to override cultureKey locale setting
+
+Archivist 1.0.1
+===============
+- [#9] Fix bug with tvFilters in getArchives
+- i18n of Snippet Properties
+- [#5] Fix issue with localization and placeholders
+- [#7] Add &where parameter to getArchives snippet for easier filtering
+
+Archivist 1.0.0
+===============
+- Fixed bug where unpublished/deleted were showing in Archivist snippet
+- Added fix for locale support
+- Added dynamic FURL support
+- Initial commit.
